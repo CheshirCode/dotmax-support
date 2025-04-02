@@ -1,0 +1,238 @@
+/* CSS переменные для удобства изменения цветов */
+:root {
+	--color-primary: #067354;
+	--color-warning: #F2CB07;
+	--color-danger: #F20F0F;
+	--color-light: #DFEBEA;
+	--color-dark-bg: rgba(0, 0, 0, 0.62);
+	--font-family: 'Roboto', sans-serif;
+}
+
+/* Обнуление страницы ===================================================================================== */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+:focus,
+:active,
+a:focus,
+a:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: var(--font-family);
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000;
+	background: url('../img/dark-forest-woods-night-time-dark-shadow-tall-trees-haunted-3840x2160-2508.jpg') 0 0/cover no-repeat fixed;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	line-height: 1;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+
+button {
+	cursor: pointer;
+	background: none;
+	border: none;
+	color: inherit;
+}
+
+/* html,
+body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	overflow: hidden;
+} */
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	position: absolute;
+	padding: 20px;
+
+}
+
+h2 {
+	color: var(--color-danger);
+	font-weight: 700;
+	font-size: 2rem;
+	text-align: center;
+	margin: 20px;
+}
+
+span {
+	color: var(--color-warning);
+	text-decoration: underline;
+}
+
+p {
+	margin: 10px 0;
+	text-align: left;
+}
+
+.paragraph {
+	padding: 10px 0 0 50px;
+	line-height: 1.2;
+}
+
+.greet,
+.basics_row {
+	background-color: var(--color-dark-bg);
+	border: 2px solid #ccc;
+	border-radius: 7px;
+	margin: 20px;
+	padding: 30px;
+	color: var(--color-light);
+}
+
+[class*="__container"] {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	margin: 10px;
+}
+
+
+.basics_row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.rules_block {
+	display: flex;
+	flex: 0 1 auto;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.rules__container {
+	/* width: 33.333%; */
+	flex: 0 1 30%;
+	margin: 0 auto;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 20px;
+}
+
+.rules__image {
+	margin: 0 auto;
+	max-height: 100%;
+	object-fit: cover;
+	flex: 1 1 30%;
+
+}
+
+.rules__image img {
+	justify-content: center;
+	align-items: center;
+	max-height: 50%;
+	max-width: 50%;
+	object-fit: cover;
+}
+
+img {
+	display: block;
+	margin: auto;
+
+}
+
+.rules__text {
+	text-align: center;
+}
+
+.paragraph {
+	margin: 0px 0px 0px 50px;
+}
+
+.text__block {
+	display: flex;
+}
+
+.paragraph {}
+
+.text__container {}
+
+
+
+.main {
+	flex: 1 1 auto;
+	margin: 0 auto;
+}
+
+
+.footer {
+	width: 100%;
+	min-height: 100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--color-danger);
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+}
+
+.footer__item {
+	margin: 20px;
+	padding: 10px;
+}
+
+.copyright {
+	background: rgba(0, 0, 0, 0.73);
+	border-radius: 7px;
+	color: rgba(255, 0, 4, 0.63);
+	text-align: center;
+	margin: 5px 10px;
+	padding: 10px;
+	font-weight: 700;
+	font-size: 2rem;
+}
