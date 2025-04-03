@@ -93,7 +93,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
-	position: absolute;
+	position: relative;
 	padding: 20px;
 
 }
@@ -114,6 +114,8 @@ span {
 p {
 	margin: 10px 0;
 	text-align: left;
+	line-height: 1.5;
+	padding: 10px;
 }
 
 .paragraph {
@@ -133,6 +135,7 @@ p {
 }
 
 [class*="__container"] {
+	max-width: 1500px;
 	position: relative;
 	margin: 0 auto;
 	width: 100%;
@@ -202,7 +205,45 @@ img {
 
 .text__container {}
 
+.before_title {
+	text-align: center;
+	font-size: 24px;
+}
 
+.text_block {}
+
+li {
+	line-height: 1.5;
+}
+
+.image__block {
+	display: flex;
+	overflow: hidden;
+	margin: 20px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+.image__block img {
+	display: flex;
+	flex-direction: column;
+	max-height: 500px;
+	padding: 10px;
+}
+
+.image__card {}
+
+.image__field {
+	width: 100%;
+	flex: 0 1 auto;
+	object-fit: cover;
+}
+
+.image__label {
+	color: #ccc;
+	text-align: center;
+}
 
 .main {
 	flex: 1 1 auto;
